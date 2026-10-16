@@ -1,0 +1,15 @@
+{
+  "name": "lsp-tools",
+  "description": "Inoffizielle Community-Werkzeuge für LEGO® SERIOUS PLAY®",
+  "owner": { "name": "Pierre Smits", "url": "https://pierresmits.de" },
+  "plugins": [
+    {
+      "name": "lsp-method-transfer",
+      "source": "./",
+      "description": "Überträgt bestehende Methoden in LEGO® SERIOUS PLAY® und beschreibt sie als Facilitator-Leitfaden.",
+      "strict": false,
+      "skills": ["./lsp-method-transfer"],
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}

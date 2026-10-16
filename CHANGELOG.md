@@ -2,6 +2,11 @@
 
 Format: [Semantic Versioning](https://semver.org/lang/de/). Neue Inhalte erhöhen die Nebenversion (0.x.0), Korrekturen die Patch-Version (0.x.y).
 
+## 0.2.1 – 2026-10-16
+- Installationsanleitung vereinheitlicht und gegen die offizielle Dokumentation geprüft (README, docs/PFLEGE.md, START-HIER): Claude Web/Desktop per ZIP-Upload, Claude Code per Plugin-Marketplace mit Auto-Update oder per Ordner.
+- `.claude-plugin/marketplace.json` ergänzt: Das Repository ist jetzt ein Claude-Code-Marketplace (`lsp-tools`).
+- Falsche Klon-URL in der Pflegeanleitung korrigiert.
+
 ## 0.2.0 – 2026-10-16
 - Wording vereinheitlicht: **Phase** (oberste Ebene) und **Schritt** (Unterebene innerhalb einer Phase).
 - **Warum-Fragen** werden in Bedeutungsfragen umgewandelt und mit `[Umformuliert]` gekennzeichnet (Muster in `bauaufgaben.md`).
