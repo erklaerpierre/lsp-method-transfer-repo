@@ -1,0 +1,40 @@
+name: Release skill ZIP
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Skill prüfen
+        run: |
+          set -e
+          f=lsp-method-transfer/SKILL.md
+          test -f "$f"
+          grep -q '^name: lsp-method-transfer$' "$f"
+          desc=$(grep '^description:' "$f" | sed 's/^description: *//')
+          len=${#desc}
+          echo "description length: $len"
+          test "$len" -le 1024
+          for r in $(grep -o 'references/[a-z0-9*-]*\.md' "$f" | sort -u | grep -v '\*'); do
+            test -f "lsp-method-transfer/$r" || { echo "Fehlende Datei: $r"; exit 1; }
+          done
+
+      - name: ZIP bauen
+        run: zip -r lsp-method-transfer.zip lsp-method-transfer -x '*.DS_Store'
+
+      - name: Release erstellen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" lsp-method-transfer.zip \
+            --title "$GITHUB_REF_NAME" \
+            --notes-file CHANGELOG.md
