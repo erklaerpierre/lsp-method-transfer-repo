@@ -5,6 +5,7 @@ Format: [Semantic Versioning](https://semver.org/lang/de/). Neue Inhalte erhöhe
 ## 0.2.1 – 2026-10-16
 - Installationsanleitung vereinheitlicht und gegen die offizielle Dokumentation geprüft (README, docs/PFLEGE.md, START-HIER): Claude Web/Desktop per ZIP-Upload, Claude Code per Plugin-Marketplace mit Auto-Update oder per Ordner.
 - `.claude-plugin/marketplace.json` ergänzt: Das Repository ist jetzt ein Claude-Code-Marketplace (`lsp-tools`).
+- Vollständiger Lizenztext CC BY-SA 4.0 als Datei `LICENSE` ergänzt.
 - Falsche Klon-URL in der Pflegeanleitung korrigiert.
 
 ## 0.2.0 – 2026-10-16

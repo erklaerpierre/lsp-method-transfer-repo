@@ -7,7 +7,7 @@ This work is licensed under **Creative Commons Attribution-ShareAlike 4.0 Intern
 - Zusammenfassung / Summary: https://creativecommons.org/licenses/by-sa/4.0/
 - Vollständiger Lizenztext / Full legal code: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-> Hinweis für die Pflege: Den vollständigen Lizenztext fügt GitHub per Vorlage ein (Datei `LICENSE` anlegen, „Choose a license template“, CC BY-SA 4.0 wählen). Diese Datei ersetzt den Text nicht.
+> Der vollständige Lizenztext steht in der Datei `LICENSE` (CC BY-SA 4.0, Text aus dem Repository choosealicense.com). Diese Datei ergänzt Namensnennung und Markenhinweis.
 
 ## Namensnennung / Attribution
 
